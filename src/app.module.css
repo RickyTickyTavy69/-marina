@@ -1,0 +1,13 @@
+.marinaFoto{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.marinaTitle{
+    color: rgba(227, 64, 59, 0.9);
+}
+
+.contactButton{
+    color: #E3403B;
+    cursor: pointer;
+}

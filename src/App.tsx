@@ -1,43 +1,18 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import s from "./app.module.css";
+import marina from "./assets/marina.jpeg";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+      <h1 className={s.marinaTitle}>Marina English Repetitor</h1>
+        <img className={s.marinaFoto} src={marina} alt="Marina E."/>
+        <p>Hello, my name is Marina and I am the best english repetitor in the f*cking universe. I will teach you english
+            for 200 bucks an hour. Feel free to contact me if you want to become the best english speaker.
         </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias autem eius iste labore quae quaerat recusandae repellat, tempore temporibus!</p>
+        <button className={s.contactButton}>Contact</button>
     </div>
   )
 }
